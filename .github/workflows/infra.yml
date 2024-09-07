@@ -7,14 +7,14 @@ on:
 permissions:
   contents: read
   id-token: write
-
+#
 jobs:
   deploy_infra:
     name: Deploy AWS Infra
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: eks
+        working-directory: eks  
 
     steps:
       - uses: actions/checkout@v4
