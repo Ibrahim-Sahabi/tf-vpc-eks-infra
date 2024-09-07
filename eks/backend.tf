@@ -13,8 +13,8 @@ terraform {
     bucket         = "teamusa-test-bucket"
     region         = "us-east-2"
     key            = "eks1/terraform.tfstate"
-    dynamodb_table = "Lock-Files"
-    encrypt        = true
+    # dynamodb_table = "Lock-Files"
+    # encrypt        = true
   }
 }
 provider "aws" {
